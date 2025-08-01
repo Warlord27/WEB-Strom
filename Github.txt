@@ -1,0 +1,275 @@
+
+Git & GitHub Command Notes (Plain Text Version)
+-----------------------------------------------
+
+1. git config
+   - Set your Git identity (name and email).
+   Example:
+   git config --global user.name "Your Name"
+   git config --global user.email "you@example.com"
+
+2. git init
+   - Initialize a new Git repository in the current folder.
+   Example:
+   git init
+
+3. git clone
+   - Copy a remote repository to your local machine.
+   Example:
+   git clone https://github.com/user/repo.git
+
+4. git status
+   - Show the status of changes in the working directory.
+   Example:
+   git status
+
+5. git add
+   - Stage files to be included in the next commit.
+   Example:
+   git add filename
+   git add .  (adds all files)
+
+6. git commit
+   - Save staged changes to the local repository with a message.
+   Example:
+   git commit -m "Initial commit"
+
+7. git branch
+   - List, create, or delete branches.
+   Example:
+   git branch          (list branches)
+   git branch new-branch
+
+8. git switch / git checkout
+   - Switch between branches or restore files.
+   Example:
+   git switch branch-name
+   git checkout branch-name
+
+9. git merge
+   - Merge another branch into the current branch.
+   Example:
+   git merge feature-branch
+
+10. git push
+    - Upload local commits to the remote repository.
+    Example:
+    git push origin main
+
+11. git pull
+    - Fetch and merge changes from the remote repository.
+    Example:
+    git pull origin main
+
+12. git log
+    - Show commit history.
+    Example:
+    git log
+
+13. git diff
+    - Show differences between working directory and staged changes.
+    Example:
+    git diff
+
+14. git stash
+    - Temporarily save uncommitted changes.
+    Example:
+    git stash
+
+15. git reset
+    - Unstage a file or undo commits.
+    Example:
+    git reset HEAD filename
+    git reset --hard HEAD~1
+
+
+
+Git & GitHub Command Notes (Plain Text Version)
+-----------------------------------------------
+
+1. git config
+   - Set your Git identity (name and email).
+   Example:
+   git config --global user.name "Your Name"
+   git config --global user.email "you@example.com"
+
+2. git init
+   - Initialize a new Git repository in the current folder.
+   Example:
+   git init
+
+3. git clone
+   - Copy a remote repository to your local machine.
+   Example:
+   git clone https://github.com/user/repo.git
+
+4. git status
+   - Show the status of changes in the working directory.
+   Example:
+   git status
+
+5. git add
+   - Stage files to be included in the next commit.
+   Example:
+   git add filename
+   git add .  (adds all files)
+
+6. git commit
+   - Save staged changes to the local repository with a message.
+   Example:
+   git commit -m "Initial commit"
+
+7. git branch
+   - List, create, or delete branches.
+   Example:
+   git branch          (list branches)
+   git branch new-branch
+
+8. git switch / git checkout
+   - Switch between branches or restore files.
+   Example:
+   git switch branch-name
+   git checkout branch-name
+
+9. git merge
+   - Merge another branch into the current branch.
+   Example:
+   git merge feature-branch
+
+10. git push
+    - Upload local commits to the remote repository.
+    Example:
+    git push origin main
+
+11. git pull
+    - Fetch and merge changes from the remote repository.
+    Example:
+    git pull origin main
+
+12. git log
+    - Show commit history.
+    Example:
+    git log
+
+13. git diff
+    - Show differences between working directory and staged changes.
+    Example:
+    git diff
+
+14. git stash
+    - Temporarily save uncommitted changes.
+    Example:
+    git stash
+
+15. git reset
+    - Unstage a file or undo commits.
+    Example:
+    git reset HEAD filename
+    git reset --hard HEAD~1
+
+
+
+
+
+
+
+user@WORLD-OUT MINGW64 ~/Downloads/GitUsed (master)
+$ git push origin master
+The authenticity of host 'github.com (64:ff9b::14cf:4952)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? n
+Please type 'yes', 'no' or the fingerprint:
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+user@WORLD-OUT MINGW64 ~/Downloads/GitUsed (master)
+$ ssh-keygen -t ed25519 -C "swastikuib@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/user/.ssh/id_ed25519):
+Created directory '/c/Users/user/.ssh'.
+Enter passphrase for "/c/Users/user/.ssh/id_ed25519" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/user/.ssh/id_ed25519
+Your public key has been saved in /c/Users/user/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:ybt7iye2iRJLYjEew155j8zShWFJ7vRL0edVuMuNM7M swastikuib@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|     ...       ..|
+|     .+  .    .. |
+| .   ooo. . . .. |
+|  * oooo.o o ..  |
+| o * =.+S   .. + |
+|  = + =..o    B .|
+| . o +  o      = |
+|    o  .o+o   E  |
+|     ...**..     |
++----[SHA256]-----+
+
+user@WORLD-OUT MINGW64 ~/Downloads/GitUsed (master)
+$ eval "$(ssh-agent -s)"
+Agent pid 1434
+
+user@WORLD-OUT MINGW64 ~/Downloads/GitUsed (master)
+$ ssh-add c:/Users/YOU/.ssh/id_ed25519
+c:/Users/YOU/.ssh/id_ed25519: No such file or directory
+
+user@WORLD-OUT MINGW64 ~/Downloads/GitUsed (master)
+$ ^Ch-add c:/Users/YOU/.ssh/id_ed25519
+
+
+
+user@WORLD-OUT MINGW64 ~/Downloads/GitUsed (master)
+$ $ ssh-add c:/Users/YOU/.ssh/id_ed25519
+bash: $: command not found
+
+user@WORLD-OUT MINGW64 ~/Downloads/GitUsed (master)
+$ ssh-add c:/Users/YOU/.ssh/id_ed25519
+c:/Users/YOU/.ssh/id_ed25519: No such file or directory
+
+user@WORLD-OUT MINGW64 ~/Downloads/GitUsed (master)
+$ ssh-add ~/.ssh/id_ed25519
+Identity added: /c/Users/user/.ssh/id_ed25519 (swastikuib@gmail.com)
+
+user@WORLD-OUT MINGW64 ~/Downloads/GitUsed (master)
+$ cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICcQm0iUGiVWfyOzj3lO0Raf5wGfj4XDdVV6T8LQND1c swastikuib@gmail.com
+
+user@WORLD-OUT MINGW64 ~/Downloads/GitUsed (master)
+$ cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICcQm0iUGiVWfyOzj3lO0Raf5wGfj4XDdVV6T8LQND1c swastikuib@gmail.com
+
+user@WORLD-OUT MINGW64 ~/Downloads/GitUsed (master)
+$ git remote set-url origin git@github.com:StemWorldSchoolNovus/GITUSED.git
+
+user@WORLD-OUT MINGW64 ~/Downloads/GitUsed (master)
+$ git remote
+origin
+
+user@WORLD-OUT MINGW64 ~/Downloads/GitUsed (master)
+$ git remote -v
+origin  git@github.com:StemWorldSchoolNovus/GITUSED.git (fetch)
+origin  git@github.com:StemWorldSchoolNovus/GITUSED.git (push)
+
+user@WORLD-OUT MINGW64 ~/Downloads/GitUsed (master)
+$ git push origin master
+The authenticity of host 'github.com (64:ff9b::14cf:4952)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 734 bytes | 734.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:StemWorldSchoolNovus/GITUSED.git
+ * [new branch]      master -> master
+
+user@WORLD-OUT MINGW64 ~/Downloads/GitUsed (master)
+$
