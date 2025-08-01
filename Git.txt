@@ -1,0 +1,83 @@
+
+Git & GitHub Command Notes (Plain Text Version)
+-----------------------------------------------
+
+1. git config
+   - Set your Git identity (name and email).
+   Example:
+   git config --global user.name "Your Name"
+   git config --global user.email "you@example.com"
+
+2. git init
+   - Initialize a new Git repository in the current folder.
+   Example:
+   git init
+
+3. git clone
+   - Copy a remote repository to your local machine.
+   Example:
+   git clone https://github.com/user/repo.git
+
+4. git status
+   - Show the status of changes in the working directory.
+   Example:
+   git status
+
+5. git add
+   - Stage files to be included in the next commit.
+   Example:
+   git add filename
+   git add .  (adds all files)
+
+6. git commit
+   - Save staged changes to the local repository with a message.
+   Example:
+   git commit -m "Initial commit"
+
+7. git branch
+   - List, create, or delete branches.
+   Example:
+   git branch          (list branches)
+   git branch new-branch
+
+8. git switch / git checkout
+   - Switch between branches or restore files.
+   Example:
+   git switch branch-name
+   git checkout branch-name
+
+9. git merge
+   - Merge another branch into the current branch.
+   Example:
+   git merge feature-branch
+
+10. git push
+    - Upload local commits to the remote repository.
+    Example:
+    git push origin main
+
+11. git pull
+    - Fetch and merge changes from the remote repository.
+    Example:
+    git pull origin main
+
+12. git log
+    - Show commit history.
+    Example:
+    git log
+
+13. git diff
+    - Show differences between working directory and staged changes.
+    Example:
+    git diff
+
+14. git stash
+    - Temporarily save uncommitted changes.
+    Example:
+    git stash
+
+15. git reset
+    - Unstage a file or undo commits.
+    Example:
+    git reset HEAD filename
+    git reset --hard HEAD~1
